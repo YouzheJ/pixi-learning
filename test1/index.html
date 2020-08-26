@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1</title>
+    <script src="../common/pixi.js"></script>
+    <style>
+        * {
+            padding: 0; 
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        let type = "WebGL"
+        if(!PIXI.utils.isWebGLSupported()){
+            type = "canvas"
+        }
+        
+        PIXI.utils.sayHello(type)
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
